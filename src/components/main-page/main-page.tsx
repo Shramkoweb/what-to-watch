@@ -2,8 +2,9 @@ import React from 'react';
 
 import {SmallFilmCard} from '../small-film-card/small-film-card';
 import { FilmCard } from '../film-card/film-card';
+import {Logo} from '../logo/logo';
 
-function MainPage(): JSX.Element {
+export function MainPage(): JSX.Element {
   return (
     <>
       {/* TODO Move to page template */}
@@ -57,7 +58,6 @@ function MainPage(): JSX.Element {
           </symbol>
         </svg>
       </div>
-
 
       <FilmCard filmName='The Grand Budapest Hotel poster' genre='Drama' posterSrc="img/the-grand-budapest-hotel-poster.jpg" year={2014}/>
 
@@ -122,13 +122,7 @@ function MainPage(): JSX.Element {
         </section>
 
         <footer className="page-footer">
-          <div className="logo">
-            <a className="logo__link logo__link--light">
-              <span className="logo__letter logo__letter--1">W</span>
-              <span className="logo__letter logo__letter--2">T</span>
-              <span className="logo__letter logo__letter--3">W</span>
-            </a>
-          </div>
+          <Logo />
 
           <div className="copyright">
             <p>© 2021 What to watch Ltd.</p>
@@ -138,5 +132,3 @@ function MainPage(): JSX.Element {
     </>
   );
 }
-
-export default MainPage;
