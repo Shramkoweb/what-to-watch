@@ -4,7 +4,7 @@ interface UserBlockProps {
   avatarSrc: string;
 }
 
-function UserBlock(props: UserBlockProps): JSX.Element {
+export function UserBlock(props: UserBlockProps): JSX.Element {
   const {avatarSrc} = props;
 
   return (
@@ -20,5 +20,3 @@ function UserBlock(props: UserBlockProps): JSX.Element {
     </ul>
   );
 }
-
-export default UserBlock;

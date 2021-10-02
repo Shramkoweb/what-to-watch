@@ -2,9 +2,9 @@ import React from 'react';
 
 import {SmallFilmCard} from '../small-film-card/small-film-card';
 import { FilmCard } from '../film-card/film-card';
-import Logo from '../logo/logo';
+import {Logo} from '../logo/logo';
 
-function MainPage(): JSX.Element {
+export function MainPage(): JSX.Element {
   return (
     <>
       {/* TODO Move to page template */}
@@ -132,5 +132,3 @@ function MainPage(): JSX.Element {
     </>
   );
 }
-
-export default MainPage;

@@ -17,5 +17,3 @@ export function Logo(props: LogoProps): JSX.Element {
     </div>
   );
 }
-
-export default Logo;
